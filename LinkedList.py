@@ -13,7 +13,7 @@ class MyLinkedList():
         self.ll_size = 0
 
     def addAtTail(self, val):
-
+        #   if List is empty put to Head, link Tail to Head
         if self.head == None:
             self.head = Node(val)
             self.tail = self.head

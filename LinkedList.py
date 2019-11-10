@@ -13,12 +13,14 @@ class MyLinkedList():
         self.ll_size = 0
 
     def addAtTail(self, val):
+        
         #   if List is empty put to Head, link Tail to Head
         if self.head == None:
             self.head = Node(val)
             self.tail = self.head
             self.ll_size += 1
             return True
+        
         #   if Tail not empty, create new Tail, repoint Previous Tail to the new Tail as next Node
         new_tail = Node(val)
         new_tail.prev = self.tail

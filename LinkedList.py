@@ -19,7 +19,7 @@ class MyLinkedList():
             self.tail = self.head
             self.ll_size += 1
             return True
-        
+        #   if Tail not empty, create new Tail, repoint Previous Tail to the new Tail as next Node
         new_tail = Node(val)
         new_tail.prev = self.tail
         self.tail.next = new_tail
